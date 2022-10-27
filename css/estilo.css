@@ -121,10 +121,13 @@ h1 {
         margin-top: -5px;
         border-radius: 4px;
         box-shadow: 4px 3px 5px 2px rgba(0, 0, 0, 0.4);
+        transition: all 0.25s;
+        
     }
     .navbar .men-hor li:hover .men-vert {
         padding-top: 5px;
         display: block;
+        
     }
     .navbar .men-vert li:hover {
         background: #1df1f8;
@@ -231,7 +234,43 @@ h1 {
                 width: 90%;
                 margin: 80px 5%;
             }
-        
+.titweb {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 40px;
+    padding-top: 100px;
+}        
+.website {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 5%;
+    align-items: center;
+}
+            .website p img{
+                width: 550px;
+                background: #DCDCD5 ;
+                border-radius: 6px;
+                transition: all 0.25s;
+                /*box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.8);*/
+            }
+            .website p img:hover {
+                transform: translateY(-10px);
+                box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.8);
+            }
+            .titrese {
+                display: table;
+                font-size: 24px;
+                font-weight: 600;
+                color: #352f2f;
+                padding-bottom: 20px;
+                text-align: left;
+            }
+            .enunciado  {
+                font-size: 14px;
+                text-align: justify;
+            }
+
         .footer {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
