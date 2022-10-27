@@ -49,6 +49,7 @@ h1 {
 .nav_label, #menu{
     display: none;
 }
+
 .logo {
     display: grid;
     grid-column: 1 / 2;
