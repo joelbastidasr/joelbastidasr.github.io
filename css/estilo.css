@@ -405,7 +405,7 @@ h1 {
         bottom: 0;
         background: #da8404;
         display: flex;
-        width: 35%;
+        width: 90%;
         left: 0;
         justify-content:flex-start;
         flex-direction: column;
@@ -423,7 +423,7 @@ h1 {
         background: none;
     
     }
-@media (max-width: 780px){
+@media (max-width: 840px){
     .otros {
         display: block;
         width: 80%;
