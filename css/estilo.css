@@ -181,7 +181,6 @@ h1 {
         }
 
         .otros {
-            
             display: grid;
             grid-column: 1 / 4;
             width: 90%;
@@ -383,7 +382,19 @@ h1 {
         cursor: pointer;
         position: absolute;
         line-height: 120px;
-        right: 25px;
+        left: 25px;
+    }
+    .header {
+        display: flex;
+        width: 100%;
+        
+    }
+    .header .logo img{
+        display: block;
+        position: absolute;
+        padding: 10px;
+        align-content: center;
+        left: calc(50% - 100px);
     }
     .nav_label .nav_img {
         width: 48px;
@@ -395,7 +406,7 @@ h1 {
         background: #da8404;
         display: flex;
         width: 35%;
-        right: 0;
+        left: 0;
         justify-content:flex-start;
         flex-direction: column;
         align-items: stretch;
@@ -412,4 +423,31 @@ h1 {
         background: none;
     
     }
+@media (max-width: 780px){
+    .otros {
+        display: block;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 20px;
+    }
+    .otros p {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 50px 0;
+        background-color: #272525;
+        height: 67vw;
+        margin-bottom: 80px;
+    }  
+    .otros img {
+        margin-top: 10px;
+        width: 65vw;
+        box-shadow: 5px 8px 6px rgba(0, 0, 0, 0.5);
+        
+    }  
+    .slider {
+        font-size: 22px;
+        font-weight: 500;
+    }
+}
 }
