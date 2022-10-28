@@ -162,24 +162,6 @@ h1 {
         width: 100%;
         
     }
-    .categoria {
-        position: absolute;
-        display: grid;
-        width: 90%;
-        grid-template-columns: repeat(4, auto);
-        align-items: center;
-        justify-items: center ;
-        margin-top: 130px;
-        margin-left: 3.5%;
-        gap: 0px;
-        margin-bottom: 100px;
-        /*background: #000000;*/
-        
-    }   
-        .categoria img {
-            width: 15vw;
-        }
-
         .otros {
             display: grid;
             grid-column: 1 / 4;
@@ -230,9 +212,29 @@ h1 {
                 margin-left: 8px;
             }
             .text {
-                width: 90%;
-                margin: 80px 5%;
+                width: 80%;
+                margin: 80px 10%;
+                font-size: 1.3vw;
+                
             }
+            .categoria {
+                position: absolute;
+                display: grid;
+                width: 90%;
+                grid-template-columns: repeat(4, auto);
+                align-items: center;
+                justify-items: center ;
+                margin-top: 130px;
+                margin-left: 3.5%;
+                gap: 0px;
+                margin-bottom: 100px;
+                /*background: #000000;*/
+                
+            }   
+                .categoria img {
+                    width: 15vw;
+                }
+
 .titweb {
     width: 90%;
     margin-left: 5%;
@@ -403,15 +405,15 @@ h1 {
         position: fixed;
         top: 90px;
         bottom: 0;
-        background: #da8404;
+        background: #ffffff;
         display: flex;
-        width: 90%;
+        width: 100%;
         left: 0;
         justify-content:flex-start;
         flex-direction: column;
         align-items: stretch;
         text-align: left;
-        padding-left: 25px;
+        padding-left: 45px;
         padding-right: 25px;
         clip-path: circle(0 at center);
         transition:clip-path 0.5s ease-in-out;
@@ -423,7 +425,16 @@ h1 {
         background: none;
     
     }
-@media (max-width: 840px){
+    .navbar .men-hor >li > a {
+        display: block;
+        width: 100%;
+        text-decoration: none;
+        color: #000000;
+        line-height: 55px;
+        font-weight: 500;
+        font-size: 22px;
+    }
+@media (max-width: 992px){
     .otros {
         display: block;
         width: 80%;
