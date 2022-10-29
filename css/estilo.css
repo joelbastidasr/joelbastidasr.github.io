@@ -212,9 +212,10 @@ h1 {
                 margin-left: 8px;
             }
             .text {
-                width: 80%;
-                margin: 80px 10%;
-                font-size: 1.3vw;
+                width: 90%;
+                margin: 0px auto;
+                font-size: 14px;
+                text-align: center;
                 
             }
             .categoria {
@@ -225,7 +226,7 @@ h1 {
                 align-items: center;
                 justify-items: center ;
                 margin-top: 130px;
-                margin-left: 3.5%;
+                margin-left: auto;
                 gap: 0px;
                 margin-bottom: 100px;
                 /*background: #000000;*/
@@ -237,9 +238,9 @@ h1 {
 
 .titweb {
     width: 90%;
-    margin-left: 5%;
+    margin:0 auto;
     font-size: 40px;
-    padding-top: 100px;
+    padding-top: 120px;
 }        
 .website {
     width: 90%;
@@ -250,10 +251,14 @@ h1 {
 }
             .website p img{
                 width: 40vw;
+                
                 background: #DCDCD5 ;
                 border-radius: 6px;
                 transition: all 0.25s;
                 /*box-shadow: 0px 12px 16px rgba(0, 0, 0, 0.8);*/
+            }
+            .website #img2 {
+                margin-left: 50px;
             }
             .website p img:hover {
                 transform: translateY(-10px);
@@ -269,8 +274,9 @@ h1 {
                 
             }
             .enunciado  {
-                font-size: 14px;
+                font-size: 13px;
                 text-align: justify;
+                margin-bottom: 70px;
             }
 
         .footer {
