@@ -35,22 +35,22 @@ h1 {
     width: 100%;
     /*border: 1px solid rgba(0, 0, 0, 0.822); */
 }
-.header {
+.container .header {
     position: fixed;
     top: 0;
     background:  #DCDCD5;
-    width: 100%;
+    width: 996px
     height: 90px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    z-index: 100;
-    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.8);
+    grid-template-columns: 1fr 3fr;
+    z-index: 1000;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.8);
 }
 .nav_label, input{
     display: none;
 }
 
-.logo {
+.header .logo {
     display: grid;
     grid-column: 1 / 2;
     width: 250px;
@@ -75,22 +75,26 @@ h1 {
         padding-top: 10px;
         
     }
-.navbar {
+.header .navbar {
     grid-column: 2 /3;
     align-items:center;
     background: #918d8d7a;
     margin-top: 20px;
     height: 50px;
     border-radius: 4px;
-    width: 100%;
+    width: 95% ;
+    margin-left: 2.5%;
     text-decoration: none;
     
 }
     .navbar .men-hor {
+        grid-column: 2 /3;
         display: grid;
-        grid-template-columns: repeat(5, 200px);
+        grid-template-columns: repeat(5, 185px);
         justify-content: space-around;
         text-align: center;
+        width: 90%;
+        margin-left: 5%;
     }
     .navbar .men-hor >li > a {
         display: block;
@@ -112,7 +116,7 @@ h1 {
         position: absolute;
         display: none;
         list-style: none;
-        width: 200px;
+        width: 225px;
         background: rgba(0, 0, 0, 0.85);
         font-size: 14px;
         padding-top: 10px;
@@ -131,8 +135,8 @@ h1 {
     }
     .navbar .men-vert li:hover {
         background: #1df1f8;
-        width: 220px;
-        margin-left: -10px;
+        width: 235px;
+        margin-left: -5px;
     }
     .navbar .men-vert li a {
         display: block;
@@ -149,11 +153,11 @@ h1 {
         font-weight: 400;
     }
 
-    .slider {
+    .container .slider {
         /*background: #88f0cd;*/
         color: rgb(78, 78, 78);
         margin-top: 120px;
-        font-size: 35px;
+        font-size: 4vw;
         font-weight: 600;
         font-family: 'PT Sans', sans-serif;
         height: 80px;
@@ -162,24 +166,24 @@ h1 {
         width: 100%;
         
     }
-        .otros {
+        .container .otros {
             display: grid;
             grid-column: 1 / 4;
-            width: 90%;
+            width: 100%;
             height: 150px;
             align-items: center;
             justify-items: center;
             grid-template-columns: repeat(5, auto);
-            margin:  0px 5%;
+            
             margin-top: 15px;
-            margin-bottom: 150px;
+            margin-bottom: 40px;
             
             /*background: red;*/
         }
             .otros p {
                 display: block;
                 width: 90%;
-                height: 275px;
+                height: 105%;
                 /*box-shadow: 2px 2px 5px black;*/
                 text-align: center;
                 /*line-height: 28vw;*/
@@ -201,23 +205,27 @@ h1 {
                 color: #ededed;
                 margin-left: 8px;
                 margin-top: 5px;
-                font-size: 16px;
+                font-size: 2vw;
                 font-weight: 500;
             } 
             .subt {
                 display: table;
                 color: #e4e0e0;
-                font-size: 13px;
+                font-size: 1vw;
                 font-weight: 300;
                 margin-left: 8px;
             }
             .text {
                 width: 90%;
-                margin: 0px auto;
-                font-size: 14px;
-                text-align: center;
+                margin:0 auto;
+                background: #1df1f8;
+                padding: 40px 0;
                 
             }
+                .text p {
+                    font-size: 2vw;
+                    text-align: center;
+                }
             .categoria {
                 position: absolute;
                 display: grid;
@@ -240,7 +248,7 @@ h1 {
     width: 90%;
     margin:0 auto;
     font-size: 40px;
-    padding-top: 120px;
+    padding-top: 80px;
 }        
 .website {
     width: 90%;
@@ -282,14 +290,15 @@ h1 {
         .footer {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
             background: black;
             width: 100%;
-            height: 200px;
+            height: 100%;
             color: #ededed;
-        
+            padding-bottom: 10px;
         }
             .footer #titulo {
-                grid-column: 1 / 2;
+                grid-column: 1 / 3;
                 grid-row: 1 / 2;
                 color: red;
                 width: calc(100% - 70px);
@@ -299,6 +308,8 @@ h1 {
                 margin-top: 10px;
             }
                 .footer #titulo #text-not{
+                    grid-column: 1 / 5;
+                    grid-row: 2 / 3;
                     padding-top: 3px;
                     color: #ededed;
                     font-size: 12px;
@@ -306,7 +317,7 @@ h1 {
                 }
                 .footer #input-suscrib {
                 display: grid;
-                grid-column: 2 / 3;
+                grid-column: 3 / 4;
                 grid-row: 1 / 2;
                 width: 100%;
                 align-items: center;
@@ -319,16 +330,21 @@ h1 {
                     width: 90%;
                     height: 22px;
                 }
-                .footer #btn-suscrib {
+                .footer #btn-suscrib{
                 display: grid;
-                grid-column: 3 / 4;
+                grid-column: 4 / 5;
                 grid-row: 1 / 2;
-                width: 150px;
+                width: 100%;
                 align-items: center;
-                border: none;
-                margin-left: 20px;
                 border-radius: none;
+                color: white;
             }
+                        .footer #btn-suscrib button {
+                            height: 26px;
+                            width: 80%;
+                            margin: 0 auto;
+
+                        }
                 .footer #logo-footer {
                 display: grid;
                 grid-column: 1 / 2;
@@ -342,7 +358,7 @@ h1 {
             }
             .footer #logo-footer img{
                     padding: 0;
-                    width: 6vw;
+                    width: 18vw;
                 }
                 .footer #info-footer {
                 grid-column: 2 / 3;
@@ -350,7 +366,7 @@ h1 {
                 color: #ededed;
                 width: calc(100% - 70px);
                 margin-left: 20px;
-                margin-top: 25px;
+                margin-top: 15px;
             }
             .footer #otros-footer {
                 grid-column: 3 / 4;
@@ -358,7 +374,7 @@ h1 {
                 color: #ededed;
                 width: calc(100% - 70px);
                 margin-left: 20px;
-                margin-top: 25px;
+                margin-top: 15px;
             }
             .footer #contacto-footer {
                 grid-column: 4 / 5;
@@ -367,7 +383,7 @@ h1 {
                 justify-content: left;
                 align-items: calc(100% - 50px);
                 margin-left: 20px;
-                margin-top: 25px;
+                margin-top: 15px;
             }
             .footer #contacto-footer #dir-footer {
                     font-size: 12px;
@@ -390,14 +406,14 @@ h1 {
         cursor: pointer;
         position: absolute;
         line-height: 120px;
-        left: 25px;
+        left: 10px;
     }
-    .header {
+    .container .header {
         display: flex;
         width: 100%;
         
     }
-    .header .logo img{
+    .container .header .logo img{
         display: block;
         position: absolute;
         padding: 10px;
@@ -409,38 +425,40 @@ h1 {
     }
     .navbar .men-hor{
         position: fixed;
-        top: 90px;
+        top: 80px;
         bottom: 0;
-        background: #ffffff;
+        background: #ffffef;
+        margin: 0 auto;
         display: flex;
-        width: 100%;
-        left: 0;
+        width: 55%;
+        left: 0%;
         justify-content:flex-start;
         flex-direction: column;
         align-items: stretch;
         text-align: left;
         padding-left: 45px;
-        padding-right: 25px;
-        clip-path: circle(0 at center);
+        padding-right: 45px;
+        clip-path: circle(0 at left);
         transition:clip-path 0.5s ease-in-out;
     }
         .nav_input:checked + .navbar .men-hor{
             clip-path: circle(100% at center);
         }
-    .navbar {
+    .header .navbar {
         background: none;
     
     }
-    .navbar .men-hor >li > a {
+    .container .navbar .men-hor >li > a {
         display: block;
         width: 100%;
+        
         text-decoration: none;
         color: #000000;
         line-height: 55px;
         font-weight: 500;
         font-size: 22px;
     }
-@media (max-width: 992px){
+@media (max-width: 550px){
     .otros {
         display: block;
         width: 80%;
