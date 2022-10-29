@@ -39,7 +39,7 @@ h1 {
     position: fixed;
     top: 0;
     background:  #DCDCD5;
-    width: 996px;
+    width: 100%;
     height: 90px;
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -166,21 +166,23 @@ h1 {
         width: 100%;
         
     }
+    .section {
+        
+        display: table;
+        margin-top: 20px;
+    }
         .container .otros {
             display: grid;
             grid-column: 1 / 4;
             width: 100%;
-            height: 150px;
+            height: 100%;
             align-items: center;
             justify-items: center;
             grid-template-columns: repeat(5, auto);
-            
             margin-top: 15px;
-            margin-bottom: 40px;
-            
             /*background: red;*/
         }
-            .otros p {
+            .container .otros p {
                 display: block;
                 width: 90%;
                 height: 105%;
@@ -190,6 +192,7 @@ h1 {
                 background-color: #272525;
                 border-radius: 6px;
                 transition: all 0.25s;
+                
             }   
             .otros p:hover {
                 transform: translateY(-10px);
@@ -216,11 +219,12 @@ h1 {
                 margin-left: 8px;
             }
             .text {
+                position: relative;
                 width: 90%;
                 margin:0 auto;
-                background: #1df1f8;
-                padding: 40px 0;
-                
+                /*background: #1df1f8;*/
+                text-align: center;
+                font-size: 1.5vw;
             }
                 .text p {
                     font-size: 2vw;
