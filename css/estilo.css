@@ -836,6 +836,7 @@ h1 {
                     .footer #btn-suscrib button {
                         height: 26px;
                         width: 80%;
+                        font-size: 10px;
                     }
             .footer #logo-footer {
             display: grid;
