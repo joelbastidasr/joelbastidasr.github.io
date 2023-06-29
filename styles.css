@@ -24,7 +24,7 @@
   .container_jb {
     max-width: 800px;
     margin-left: 50px;
-    padding: 20px;
+    /*padding: 20px;*/
     font-family: 'Ysabeau Infant', sans-serif;
   }
 
@@ -262,6 +262,13 @@ footer {
     nav.active ul.menu {
       display: flex;
     }
+
+    .servicios-grid {
+        display: block;
+        
+      }
+
+
   }
   
   /* Estilos de las secciones */
