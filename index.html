@@ -1,154 +1,164 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JB Project Manager</title>
-    <link rel="stylesheet" href="css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JB Project Manager</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            
-            <label for="menu" class="nav_label">
-                <img src="img/iconos/men.svg" alt="" class="nav_img">
-            </label>
-            
-            
-            <div class="logo">
-                <a href="index.html"><img src="img/LJBPM.png" alt="LOGOTIPO" ></a>
-            </div>
-            <input type="checkbox" id="menu" class="nav_input">
-            <nav class="navbar">
-                <ul class="men-hor">
-                    <li><a href=""><img class="iconos" src="img/iconos/home.svg"/>Inicio</a></li>
-                    <li><a><img class="iconos" src="img/iconos/portfolio.svg"/>Portafolio <img class="desplegar" src="img/iconos/down.svg"/></a>
-                        <ul class="men-vert">
-                            <li><a href="">Páginas Web<img class="subicono" src="img/iconos/check.svg"/></a></li>
-                            <li><a href="">Software<img class="subicono" src="img/iconos/check.svg"/></a> </li>
-                            <li><a href="">Diseños y Modelado<img class="subicono" src="img/iconos/check.svg"/></a></li> 
-                            <li><a href="">Diseño Gráfico<img class="subicono" src="img/iconos/check.svg"/></a> </li> 
-                            <li><a href="">Ilustraciones<img class="subicono" src="img/iconos/check.svg"/></a> </li> 
-                        </ul>
-                    </li>
-    
-                    <li><a href=""><img class="iconos" src="img/iconos/blog.svg"/>Blog</a></li>
-    
-                    <li><a href=""><img class="iconos" src="img/iconos/curso.svg"/>Cursos<img class="desplegar" src="img/iconos/down.svg"/></a>
-                        <ul class="men-vert">
-                            <li><a href="">AutoCAD</a> </li>
-                            <li><a href="">Revit Architecture</a> </li>
-                            <li><a href="">SketchUP</a></li> 
-                            <li><a href="">Corel Draw</a> </li> 
-                            <li><a href="">Figma</a> </li> 
-                            <li><a href="">Páginas Web (HTML, CSS)</a> </li>
-                        </ul>
-                    </li>
-    
-                    <li><a href=""><img class="iconos" src="img/iconos/contacto.svg"/>Contacto</a></li>
-                </ul>
-                
-            </nav>
-            
-        </header>
-        <article class="slider">
-            <h1>PROJECTS & SERVICES</h1>
-        </article>
+  <header>
+    <div class="logo">
+      <img src="img/JBPM-Logo1-2.png" width="65px" alt="JB Project Manager">
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#acerca">JB Project Manager</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="hamburger-menu">
+      <div class="bar"></div>
+    </div>
+  </header>
 
-        <div class="otros">
-            <p><img src="img/00.png" width="200px" alt="PRODUCTO 01"><span class="pieimg">Logotipo</span><span class="subt">Costo: $ 5,75</span></p>
-            <p><img src="img/Branding.png"  width="200px" alt="PRODUCTO 02"><span class="pieimg">Imagotipo</span><span class="subt">Costo: $ 25,50</span></p>
-            <p><img src="img/Past002.jpg"  width="200px" alt="PRODUCTO 03"><span class="pieimg">Imagologo</span><span class="subt">Costo: $ 51,80</span></p>
-            <p><img src="img/Publi03.png"  width="200px" alt="PRODUCTO 04"><span class="pieimg">Diseño Creativo</span><span class="subt">Costo: $ 5,75</span></p>
-            <p><img src="img/publicacion.jpg"  width="200px" alt="PRODUCTO 05"><span class="pieimg">Modelado BIM</span><span class="subt">Costo: $ 5,75</span></p>
-        </div>
-
-        <section class="section">
-            <div class="text">
-                <span> Somos profesionales estamos preparados para ofrecerte un servicio impecable y actualizado. 
-                    Ofrecemos proyectos, modelado BIM, planos en AutoCAD, diseño gráfico, desarrollo de sitios y 
-                    aplicaciones web, logotipo, diseño para redes sociales y edición de videos. Todo lo que necesitas 
-                    para tu proyecto lo encontrarás en nuestro equipo.<br>
-                    <br>
-                    Somos un equipo de diseño y desarrollo multidisciplinario, especializado en la creación de proyectos 
-                    impecables y totalmente actualizados.
-                </span>
-        </div>  
-        </section>    
-
-        <h1 id="sitios" class="titweb">Ejecución de Proyectos <br>Profesionales</h1>
-        <div class="website">
-            
-            <p>
-                <img src="img/web-01.png.png" alt="">
-            </p>
-                <p class="enunciado"><span class="titrese">Diseño, Desarrollo y maquetación de Sitios y Aplicaciones Web</span>
-                ¿Estás buscando una empresa profesional para diseñar y programar tu página web? 
-                ¡Entonces has encontrado lo que necesitas! somos una empresa especializada en el 
-                desarrollo de páginas web optimizadas para todos los dispositivos. Ofrecemos un 
-                servicio completo de calidad, desde el diseño de la interfaz de usuario hasta la 
-                programación del back-end. Trabajamos con todas las tecnologías más modernas y 
-                utilizamos los últimos estándares web. ¡No hay nada que se nos resista!<br><br>
-                Nuestro desarrollo profesional de páginas web es impecable y está totalmente actualizado. 
-                Llevamos más de 10 años trabajando en el desarrollo web y hemos creado decenas de sitios 
-                web para nuestros clientes. Todos nuestros sitios web son responsivos, se adaptan a todos 
-                los dispositivos y navegadores y están optimizados para los motores de búsqueda. 
-                Tenemos un amplio equipo de expertos en el desarrollo web que se encargarán de todo el proceso, 
-                desde el diseño hasta la programación, pasando por la optimización del sitio web para 
-                los motores de búsqueda. Tu sitio web será perfecto y estará listo para el lanzamiento en poco tiempo.
-                    
-                    
-                </p>
-            
-
-            <p>
-                <img src="img/web-02.png" alt="">
-            </p>    
-            <p class="enunciado"><span class="titrese">Adecuación "Responsive" para Cualquier Dispositivo</span>
-                    
-                    Cuando utilizamos el término “responsive” (adaptable), nos referimos principalmente 
-                    a “responsive design” (diseño web adaptable). Esto significa hacer que un sitio web sea 
-                    accesible y adaptable en todos los devices: tabletas, smartphones, etc.<br><br>
-                    El principio de responsive design se logra a través de hojas de estilos en cascada (CSS) 
-                    y técnicas de programación (HTML). Con estas técnicas, puede evitar que se integre el 
-                    mismo contenido varias veces, ya que el objetivo del responsive design es adaptar el mismo 
-                    conjunto de contenidos a las diferentes tecnologías que se utilizan.
-            </p>
-            
-
-            <p>
-                <img src="img/web-03.png" alt="">
-            </p>
-            <p class="enunciado"><span class="titrese">Calidad y Rendimiento, eso lo consigues con un excelente Sitio Web</span>
-                    
-                Te ofrecemos páginas web profesionales de alta calidad y diseño impecable. 
-                Tenemos años de experiencia en el campo y estamos constantemente actualizando nuestros 
-                métodos para asegurarnos de que estamos brindando el mejor servicio posible. No importa 
-                lo que necesites, podemos ayudarte a crear un sitio web perfecto para ti.<br><br>
-                Nuestras páginas web profesionales son la especialidad para el e-commerce y tiendas en 
-                línea en general. Sitios personalizados según la exigencia del cliente, siempre están al día 
-                y lucen impecables. Con un equipo de expertos a tu disposición, tu proyecto web estará en buenas manos.
-            </p>
-        </div>
-
-        <footer class="footer">
-            <div id="titulo">Acerca de Nosotros<br><p id="text-not">Con más de 20 años de experiencia en 
-            Proyectos Industriales y Desarrollo de Aplicaciones Web o de Escritorio, además de una amplia 
-            variedad de servicios informáticos.</p></div>
-            <p id="input-suscrib"><input type="text" name="inp-suscrib"></p>
-            <p id="btn-suscrib"><button name="btn-suscrib" type="submit">SUSCRIBIRSE</button></p>
-            <p id="logo-footer"><img src="img/LJBPM.png" alt="LOGO"></p>
-            <p id="info-footer">INFORMACION</p>
-            <p id="otros-footer">OTROS ENLACES</p>
+  <section id="ImagenPpal">
+    <h2 class="titulo">Diseño Generado por Inteligencia Artificial, leonardo.ai</h2>
+    <div class="img_ppal">
         
-            <div id="contacto-footer">
-            <p>CONTACTO</p>
-                <p id="dir-footer">Dirección: Barquisimeto-Lara</p>
-                <p id="tel-footer">Teléfono: +584245388701</p>
-                <p id="mail-footer">Correo: joelbastidasr@gmail.com</p>
-            </div>
-        </footer>
-    </div>  
+        <img class="centrar" src="img/fondo2.jpg" width="90%" alt="Imagen de Prueba">
+    </div>
+
+  </section>
+
+  <section id="acerca2">
+    <div class="container">
+      <div class="acerca2-grid">
+        <div class="acerca2-column">
+          <h2>JB Project Manager</h2>
+          <p class="servicio_jb">Bienvenidos a JB Project Manager: líderes en la Implementación de la Metodología BIM. Con más de 15 años de experiencia en la industria de la construcción, nos enorgullece ofrecer soluciones integrales utilizando las herramientas más avanzadas del mercado. Nuestro equipo de expertos está especializado en el uso de software como AutoCAD, SketchUP y Revit para llevar a cabo proyectos arquitectónicos de manera eficiente y efectiva.
+
+            En JB Project Manager, entendemos la importancia de adoptar la tecnología BIM (Building Information Modeling) para optimizar el ciclo de vida completo de un proyecto. Mediante el uso de esta metodología, podemos generar y gestionar información digital en 3D de todos los aspectos de un edificio, desde el diseño y la construcción hasta la operación y el mantenimiento.
+            
+            Nuestra amplia experiencia en la implementación de la Metodología BIM nos ha permitido colaborar con una amplia gama de proyectos en diversos sectores de la construcción. Trabajamos tanto en proyectos residenciales como comerciales, institucionales e industriales, adaptándonos a las necesidades y requisitos específicos de cada cliente.
+            
+            Nuestro equipo está altamente capacitado en el uso de software de diseño y modelado BIM. Utilizamos AutoCAD para crear planos y dibujos técnicos precisos, garantizando la correcta representación de los elementos constructivos. Además, contamos con expertos en SketchUP, una herramienta líder en el diseño arquitectónico que nos permite visualizar y presentar proyectos de manera efectiva.
+            
+            La implementación de la Metodología BIM no sería completa sin el uso de Revit, una potente herramienta de modelado en 3D. A través de Revit, generamos modelos digitales detallados que incluyen información paramétrica de los componentes del edificio. Esto nos permite realizar análisis y simulaciones avanzadas, detectar posibles colisiones entre elementos, y optimizar el proceso de construcción.
+            
+            Además de nuestros servicios de implementación de la Metodología BIM, también ofrecemos servicios de Renders View. Utilizando técnicas de visualización y renderizado, podemos crear imágenes fotorrealistas y recorridos virtuales que ayudan a nuestros clientes a visualizar su proyecto antes de que se inicie la construcción. Estas representaciones visuales son una herramienta valiosa para la toma de decisiones y la comunicación efectiva con todos los involucrados en el proyecto.
+            
+            En JB Project Manager, nos enorgullece nuestra experiencia, dedicación y compromiso con la excelencia. Nuestro objetivo es brindar soluciones innovadoras que optimicen la planificación, la ejecución y la gestión de proyectos de construcción. Si busca un equipo profesional que lo acompañe en la implementación de la Metodología BIM y en la creación de diseños arquitectónicos de alta calidad, no dude en contactarnos. Estamos listos para convertir su visión en realidad.</p>
+    
+        </div>
+        <div class="acerca2-column">
+          <h3>Nuestra Misión</h3>
+          <p>Nuestra misión en JB Project Manager es ser líderes en la implementación de la Metodología BIM y ofrecer soluciones integrales en el campo de la construcción. Nos comprometemos a brindar servicios de alta calidad, utilizando tecnología de vanguardia y aprovechando nuestra amplia experiencia en proyectos arquitectónicos. Buscamos superar las expectativas de nuestros clientes, proporcionando resultados excepcionales, eficiencia en la ejecución de proyectos y un enfoque centrado en la satisfacción del cliente.</p>
+          <h3>Nuestra Visión</h3>
+          <p>Nuestra visión en JB Project Manager es ser reconocidos a nivel nacional e internacional como una empresa líder en la implementación de la Metodología BIM y en la gestión de proyectos arquitectónicos. Nos esforzamos por mantenernos a la vanguardia de la tecnología y las mejores prácticas en la industria de la construcción. Buscamos ser el socio preferido de nuestros clientes, brindando soluciones innovadoras, calidad excepcional y un enfoque orientado al logro de resultados exitosos. Nuestra visión es ser reconocidos como un referente en el uso de BIM para mejorar la eficiencia, la colaboración y la calidad en la industria de la construcción.</p>
+          <br>
+          <h3 class="titulo">Diseño Generado por Inteligencia Artificial, leonardo.ai</h3>
+          <img class="centrar2" src="img/diseño.jpg" width="87%" alt="Imagen de Prueba">
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <section id="servicios">
+    <div class="container">
+      <h2>Servicios</h2>
+      <div class="servicios-grid">
+        <div class="servicio">
+          <i class="fas fa-cogs"></i>
+          <h3>Servicio 1</h3>
+          <p>Descripción del servicio 1.</p>
+        </div>
+        <div class="servicio">
+          <i class="fas fa-hammer"></i>
+          <h3>Servicio 2</h3>
+          <p>Descripción del servicio 2.</p>
+        </div>
+        <div class="servicio">
+          <i class="fas fa-paint-roller"></i>
+          <h3>Servicio 3</h3>
+          <p>Descripción del servicio 3.</p>
+        </div>
+        <div class="servicio">
+          <i class="fas fa-tools"></i>
+          <h3>Servicio 4</h3>
+          <p>Descripción del servicio 4.</p>
+        </div>
+        <div class="servicio">
+          <i class="fas fa-screwdriver"></i>
+          <h3>Servicio 5</h3>
+          <p>Descripción del servicio 5.</p>
+        </div>
+        <div class="servicio">
+          <i class="fas fa-building"></i>
+          <h3>Servicio 6</h3>
+          <p>Descripción del servicio 6.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="portafolio">
+    <div class="container">
+      <h2>Portafolio</h2>
+      <p>Contenido de la sección Portafolio...</p>
+    </div>
+  </section>
+
+  <section id="blog">
+    <div class="container">
+      <h2>Blog</h2>
+      <p>Contenido de la sección Blog...</p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="container">
+      <h2>Contacto</h2>
+      <p>Contenido de la sección Contacto...</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container_footer">
+      <div class="footer-column">
+        <div class="footer-logo">
+          <img src="img/JBPM-Logo1-2.png" width="85px" alt="JB Project Manager">
+        </div>
+      </div>
+      <div class="footer-column">
+        <div class="contact-info">
+          <h3>Información de contacto</h3>
+          <p>Dirección: Calle Principal, Ciudad, País</p>
+          <p>Teléfono: +1234567890</p>
+          <p>Email: info@jbprojectmanager.com</p>
+        </div>
+      </div>
+      <div class="footer-column">
+        <div class="social-media">
+          <h3>Síguenos en redes sociales</h3>
+          <ul>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src="script.js"></script>
 </body>
 </html>
